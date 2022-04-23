@@ -9,11 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var imageAvatar: UIImageView! {
+        didSet {
+        imageAvatar.layer.cornerRadius = 30
     }
-
-
 }
+        override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+}
+
 
